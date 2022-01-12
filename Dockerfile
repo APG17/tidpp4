@@ -1,4 +1,4 @@
-FROM node:12
+FROM node:16
 
 WORKDIR /app
 
@@ -12,6 +12,6 @@ RUN npm install socket.io mysql
 
 COPY . .
 
-EXPOSE 8080
+EXPOSE 4040
 
 CMD ["node", "server.js"]
