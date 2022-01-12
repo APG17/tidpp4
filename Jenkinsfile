@@ -57,7 +57,7 @@ pipeline {
         stage("Continuous Deployment") {
             steps {
                 echo "Docker Build & docker-compose"
-                bat 'docker build . -t danrotaru/tidpp4 && docker-compose up'
+                bat 'docker build . -t valeriy099/tidpp-4 && docker-compose up'
             }
         }
         
