@@ -101,8 +101,6 @@ pipeline {
                 }
             }
 
-           // junit '*/junit.xml'
-            archiveArtifacts artifacts: '*/*.*', fingerprint: true
             junit '*/JUnit_Report.xml'
 
         }
