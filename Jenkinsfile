@@ -84,7 +84,9 @@ pipeline {
             script {
                 if (CLEAN_WORKSPACE == true) {
                     echo 'Deleting BUILD_TAG folder'
-                    bat 'rm -rf ${BUILD_TAG}'
+                    deleteDir()
+                    dir("${workspace}@tmp") {
+                         deleteDir()
                 } else {
                     echo 'BUILD_TAG folder has not been deleted'
                 }
