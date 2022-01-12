@@ -25,6 +25,7 @@ pipeline {
                 echo "Build number ${BUILD_NUMBER} and ${BUILD_TAG}"
                 bat 'npm install'
                 bat 'npm install is-ci --save'
+                bat 'npm i jest-cli -g'
                 bat 'npm i @jest/core'
             }
         }
