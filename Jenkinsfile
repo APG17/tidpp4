@@ -76,12 +76,19 @@ pipeline {
 
         always {
             echo "Build Tag: ${BUILD_TAG}"
-
+            script{
+                if (params.CLEAN_WORKSPACE == false){
+                    echo 'Deleting current map'
+                    cleanWs()
+                    CLEAN_WORKSPACE = true
+                }
+            }
 
             script {
                 if (CLEAN_WORKSPACE == true) {
                     echo 'Deleting BUILD_TAG folder'
                     bat 'rm -rf ${BUILD_TAG}'
+                    ON_SUCCES_SEND_EMAIL = true
                 } else {
                     echo 'BUILD_TAG folder has not been deleted'
                 }
