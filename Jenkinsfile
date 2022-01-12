@@ -86,7 +86,7 @@ pipeline {
                     echo 'Deleting BUILD_TAG folder'
                     deleteDir()
                     dir("${workspace}@tmp") {
-                         deleteDir()
+                        deleteDir()}
                 } else {
                     echo 'BUILD_TAG folder has not been deleted'
                 }
