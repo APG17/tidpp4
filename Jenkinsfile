@@ -93,11 +93,11 @@ pipeline {
 
                 if(ON_SUCCESS_SEND_EMAIL == true){
                     emailext body: "Pipeline SUCCESS!\nJOB_NAME: ${JOB_NAME}\nBUILD_NUMBER: ${BUILD_NUMBER}\nBUILD_URL: ${BUILD_URL}",
-                    subject: 'All is ok!', to: 'val13099@mail.ru'
+                    subject: 'All is ok!', to: 'popa.valeriu@isa.utm.md'
                 }
                 else{
                     emailext body: "Pipeline ERROR!\nJOB_NAME: ${JOB_NAME}\nBUILD_NUMBER: ${BUILD_NUMBER}\nBUILD_URL: ${BUILD_URL}",
-                    subject: 'Some errors!', to: 'val13099@mail.ru'
+                    subject: 'Some errors!', to: 'popa.valeriu@isa.utm.md'
                 }
             }
 
