@@ -1,6 +1,6 @@
 const expect = require('chai').expect;
 // import math file
-const math = require('../math');
+const math = require('./math');
 describe('math.js tests', () => {
     describe('math.add() Test', () => {
         it('should equal 2', () => {
