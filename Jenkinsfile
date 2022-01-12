@@ -29,6 +29,7 @@ pipeline {
                 bat 'npm i @jest/core'
                 bat 'npm install jest-junit'
                 bat 'npm install chai'
+                bat 'npm install junit-xml'
             }
         }
 
