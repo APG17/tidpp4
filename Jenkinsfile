@@ -27,6 +27,7 @@ pipeline {
                 bat 'npm install is-ci --save'
                 bat 'npm i jest-cli -g'
                 bat 'npm i @jest/core'
+                bat 'npm install jest-junit'
             }
         }
 
