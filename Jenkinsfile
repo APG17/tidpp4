@@ -101,7 +101,7 @@ pipeline {
                 }
             }
 
-            junit '*/JUnit_Report.xml'
+           // junit '*/JUnit_Report.xml'
 
         }
 
