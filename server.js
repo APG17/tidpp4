@@ -77,3 +77,7 @@ io.on("connection", function(client) {
 });
 
 server.listen(4320);
+
+const port = 4040;
+app.listen(port, () => {
+    console.log('Express listening at http://0.0.0.0:${port}');});
