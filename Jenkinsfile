@@ -77,11 +77,7 @@ pipeline {
         always {
             echo "Build Tag: ${BUILD_TAG}"
             script{
-                if (params.CLEAN_WORKSPACE == false){
-                    echo 'Deleting current map'
-                    cleanWs()
-                    CLEAN_WORKSPACE = true
-                }
+                cleanWs()
             }
 
             script {
