@@ -33,17 +33,6 @@ pipeline {
             }
         }
 
-        //po pricolu
-        stage ("Installing packages"){
-            steps{
-                bat 'npm install socket.io'
-                bat 'npm install socket.io mysql'
-                bat 'node server.js'
-            }
-        }
-        
-        
-        
         stage("Backend test") {
             steps {
                 echo "TESTING_BACKEND"
