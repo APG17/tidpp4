@@ -4,16 +4,16 @@
   "description": "test chat nodejs & socket.io",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index",
-    "test": "jest --ci --testResultsProcessor=jest-junit"
+    "test": "jest --ci --testResultsProcessor=jest-junit",
+    "start": "node index"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.16.4",
-    "mysql": "^2.16.0",
-    "socket.io": "^2.1.1",
+    "mysql": "^2.18.1",
+    "socket.io": "^2.4.1",
     "socket.io-stream": "^0.9.1",
     "socketio-file-upload": "^0.6.4"
   },
