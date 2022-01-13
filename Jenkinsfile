@@ -16,7 +16,7 @@ pipeline {
 
         stage("Fetch repository") {
             steps {
-                git 'https://github.com/APG17/tidpp3.git/'
+                git 'https://github.com/APG17/tidpp4.git/'
             }
         }
 
