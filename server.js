@@ -11,7 +11,7 @@ var db = mysql.createConnection({
     user: 'root',
     password: 'root',
     database: 'chat2',
-    socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock',
+    //socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock',
     debug:   false
 })
 
