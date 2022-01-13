@@ -54,6 +54,13 @@ pipeline {
             }
         }
         
+        stage("Continuous Delivery") {
+            steps {
+                echo "Push all to DockerHub"
+                bat 'docker push valeriy099/tidpp-4'
+            }
+        }
+        
         stage("Continuous Deployment") {
             steps {
                 echo "Docker Build & docker-compose"
