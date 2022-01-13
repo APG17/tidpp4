@@ -16,7 +16,7 @@ pipeline {
 
         stage("Fetch repository") {
             steps {
-                git 'https://github.com/Valeriy099/clone-js-app-1527.git'
+                git 'https://github.com/APG17/tidpp-lab3.git/'
             }
         }
 
